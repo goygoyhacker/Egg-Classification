@@ -97,7 +97,7 @@ if uploaded_file is not None:
     img = cv2.resize(img, image_size)
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-    st.image(img_rgb, caption="Uploaded Image", use_container_width=True)
+    st.image(img_rgb, caption="Uploaded Image", use_column_width=True)
 
     features = extract_features(img_rgb)
 
